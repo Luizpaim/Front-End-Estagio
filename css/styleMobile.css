@@ -1278,7 +1278,7 @@
 
 /* #region n@media (paisagem) até max 1199px */
 
-@media screen and (min-width: 769px) and (max-width: 992px) and (orientation:landscape) {
+@media screen and (min-width: 769px) and (max-width: 1199px) and (orientation:landscape) {
     /* #region Menu e capa inico*/
     a {
         font-size: 20pt;
