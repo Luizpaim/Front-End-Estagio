@@ -89,7 +89,7 @@ a:hover {
 }
 
 .logo {
-    margin-right: 300px;
+    margin-right: 100px;
 }
 
 nav {
@@ -166,11 +166,11 @@ header {
 }
 
 .textoCapa2 {
-    margin-right: 10.980966325036603vw;
+    margin-right: 7.980966325036603vw;
 }
 
 .setaCapa {
-    margin-left: 10.980966325036603vw;
+    margin-left: 7.980966325036603vw;
 }
 
 .textoCapa1 {
@@ -178,7 +178,7 @@ header {
     display: flex;
     justify-content: start;
     flex-direction: column;
-    margin-left: 10.980966325036603vw;
+    margin-left: 7.980966325036603vw;
 }
 
 .textoCapa1 h1 {
@@ -456,7 +456,7 @@ hr {
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 120px 20px 120px;
+    padding: 20px 110px 20px 110px;
     margin-bottom: 60px;
     font-size: 13pt;
     line-height: 25px;
@@ -466,7 +466,7 @@ hr {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 30px 50px 30px 50px;
+    padding: 20px 10px 20px 10px;
     text-align: center;
     border-top: 3px solid #cecece;
     border-bottom: 3px solid #cecece;
@@ -484,7 +484,7 @@ hr {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 30px 50px 30px 50px;
+    padding: 20px 10px 20px 10px;
     text-align: center;
     transition: bacground 0.3s;
 }

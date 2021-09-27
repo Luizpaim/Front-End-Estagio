@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav>
-            <a href="/" class="logo"><img src="images/logo.png" alt="logo" width="150px"></a>
+            <a href="/" class="logo"><img src="images/logo.png" alt="logo" width="120px"></a>
 
             <div class="mobile-menu">
                 <div class="line1"></div>
@@ -246,22 +246,22 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br class="br"> magna aliqua.</p>
             <div class="form">
                 <fieldset>
-                    <form class="formulario" id="formulario" action="">
+                    <form class="formulario" id="formulario" name="myForm" action="">
 
                         <label for="nome">Nome</label><br>
-                        <input type="text" name="nome" id="nome" placeholder="Nome Completo" maxlength="40"><br>
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo" maxlength="40" required><br>
 
                         <label for="telefone">Telefone Celular</label><br>
-                        <input type="text" name="telefone" id="telefone" placeholder="(11) 90000-0000 " maxlength="14"><br>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(11) 90000-0000 " maxlength="14" required><br>
 
                         <label for="email">Email</label><br>
-                        <input type="email" name="email" id="email " placeholder="email@email.com" maxlength="40"><br>
+                        <input type="email" name="email" id="email " placeholder="email@email.com" maxlength="40" required><br>
 
                         <label for="assunto">Assunto</label><br>
-                        <input type="text " name="assunto" id="assunto" placeholder="Assunto" maxlength="40"><br>
+                        <input type="text " name="assunto" id="assunto" placeholder="Assunto" maxlength="40" required><br>
 
                         <label for="mensagem">Mensagem</label><br>
-                        <textarea name="mensagem" id="mensagem" cols="42" rows="3" placeholder="Sua mensagem" maxlength="300"></textarea><br>
+                        <textarea name="mensagem" id="mensagem" cols="42" rows="3" placeholder="Sua mensagem" maxlength="300" required></textarea><br>
 
                         <input class="btnEnviar" type="submit" name="enviar" value="Lorem ipsum" id="enviar">
 
@@ -279,7 +279,10 @@
         </div>
         <p>&copy; Copyrught Ingram Micro Brasil 2018</p>
     </footer>
-
+    <script>
+        configurarCampo();
+    </script>
+    <script src="script/validar-formulario.js"></script>
     <script src="script/mobile-navBar.js"></script>
 </body>
 
