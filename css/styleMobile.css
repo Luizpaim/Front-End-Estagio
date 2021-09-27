@@ -1314,10 +1314,10 @@
         justify-content: flex-end;
     }
     .textoCapa1 h1 {
-        font-size: 25pt;
+        font-size: 35pt;
         margin-bottom: 20px;
     }
-    .textoCapa1 h4 {
+    .textoCapa1 h2 {
         font-size: 15pt;
         margin-bottom: 0px;
     }
@@ -1511,8 +1511,8 @@
     }
     .textoBanner h2 {
         margin: 0px 5px 0px 5px;
-        line-height: 30pt;
-        font-size: 18pt;
+        line-height: 25pt;
+        font-size: 20pt;
         font-weight: 500;
     }
     /* #region fale conosco*/
@@ -1527,9 +1527,6 @@
     }
     /* #endregion */
 }
-
-
-/* #endregion fim */
 
 
 /* #endregion fim */
