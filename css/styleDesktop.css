@@ -49,6 +49,8 @@ a {
     text-decoration: none;
     font-family: 'subTitulo';
     transition: 0.03s;
+    font-weight: 500;
+    font-size: 13pt;
 }
 
 a:hover {
@@ -89,7 +91,7 @@ a:hover {
 }
 
 .logo {
-    margin-right: 30px;
+    margin-right: 0;
 }
 
 nav {
@@ -160,18 +162,17 @@ header {
 .capatxt2 {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding-right: 500x;
-    padding-left: 500x;
     margin-top: 150px;
 }
 
 .textoCapa2 {
-    margin-right: 120px;
+    margin-right: 150px;
 }
 
 .setaCapa {
-    margin-left: 120px;
+    margin-left: 150px;
 }
 
 .textoCapa1 {
@@ -179,7 +180,7 @@ header {
     display: flex;
     justify-content: start;
     flex-direction: column;
-    margin-left: 120px;
+    margin-left: 150px;
 }
 
 .textoCapa1 h1 {
@@ -225,7 +226,7 @@ header {
 .opcoesTxt {
     margin-top: 60px;
     display: flex;
-    line-height: 30px;
+    line-height: 40px;
     letter-spacing: 1px;
     flex-direction: column;
     text-align: center;
@@ -252,13 +253,13 @@ header {
 /* #region article opções Cartoes*/
 
 .coluna1 {
-    margin-left: 90px;
-    margin-right: 20px;
+    margin-left: 110px;
+    margin-right: 30px;
 }
 
 .coluna2 {
-    margin-right: 90px;
-    margin-left: 20px;
+    margin-right: 110px;
+    margin-left: 30px;
 }
 
 .container {
@@ -269,11 +270,12 @@ header {
 .cartao {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+    line-height: 25px;
     color: white;
     transition: box-shadow 0.2s;
-    padding: 10px;
-    font-size: 1em;
+    padding: 10px 10px 20px 10px;
+    font-size: 13pt;
 }
 
 .cartao:hover {
@@ -281,7 +283,7 @@ header {
 }
 
 .cartao img {
-    margin: 15px;
+    margin: 25px 15px 15px 15px;
 }
 
 .cartao h1 {
@@ -306,7 +308,7 @@ header {
 
 .globalSessao h1 {
     font-size: 30pt;
-    margin-top: 50px;
+    margin-top: 80px;
     color: #4169E1;
     text-align: center;
     font-family: 'subTitulo';
@@ -317,11 +319,12 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 50px;
+    margin: 0px 60px 0px 60px;
     text-align: center;
     font-size: 13pt;
     transition: box-shadow 0.3s;
-    padding: 0px;
+    line-height: 20px;
+    padding: 50px;
     border-radius: 3px;
 }
 
@@ -382,6 +385,7 @@ header {
 }
 
 .mao {
+    font-size: 15pt;
     margin-bottom: 20px;
     color: #7CFC00;
 }
@@ -403,6 +407,7 @@ header {
 }
 
 .seguranca {
+    font-size: 15pt;
     margin-bottom: 20px;
     color: #1E90FF;
 }
@@ -424,6 +429,7 @@ header {
 }
 
 .not {
+    font-size: 15pt;
     margin-bottom: 20px;
     color: #FFD700;
 }
@@ -431,7 +437,7 @@ header {
 hr {
     margin-bottom: 20px;
     width: 50px;
-    margin-left: 150px;
+    margin-left: 80px;
 }
 
 
@@ -452,15 +458,17 @@ hr {
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 90px 20px 90px;
+    padding: 20px 120px 20px 120px;
     margin-bottom: 60px;
+    font-size: 13pt;
+    line-height: 20px;
 }
 
 .atg {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 30px;
+    padding: 30px 40px 40px 40px;
     text-align: center;
     border-top: 3px solid #cecece;
     border-bottom: 3px solid #cecece;
@@ -478,7 +486,7 @@ hr {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 30px;
+    padding: 30px 40px 40px 40px;
     text-align: center;
     transition: bacground 0.3s;
 }
@@ -596,7 +604,7 @@ hr {
     height: 40px;
     border: none;
     border-radius: 3px;
-    width: 400px;
+    width: 450px;
     margin-bottom: 25px;
     margin-top: 5px;
     transition: all 0.3s;
@@ -616,12 +624,12 @@ hr {
 }
 
 .form textarea {
-    max-width: 400px;
-    min-width: 400px;
+    max-width: 450px;
+    min-width: 450px;
     min-height: 50px;
     max-height: 200px;
     text-align: justify;
-    width: 400px;
+    width: 450px;
     border: none;
     border-radius: 3px;
     transition: all 0.3s;

@@ -1,26 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box
-}
-
-html {
-    font-size: 100%;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    overflow: auto
-}
-
-html,
-body {
-    width: 100%;
-    height: 100%
-}
-
-
 /* #region Menu Principal Até 575pxs*/
 
 @media (max-width: 575.98px) {
@@ -649,33 +626,39 @@ body {
 
 /* #region @media (max-width: 575.98px) Inicio*/
 
-@media (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
     /* #region Capa inicio*/
     .imgCapa {
         background: url("../images/capa.png") no-repeat center;
         background-size: cover;
-        height: 115.5vh;
+        height: 90vh;
     }
     .imgCapa .capa {
         display: none;
     }
     .backgroundBlack {
-        height: 115.5vh;
+        height: 90vh;
         position: relative;
         align-items: center;
-        justify-content: start;
+        justify-content: center;
     }
     .setaCapa {
         display: none;
     }
     .textoCapa1 {
-        margin-top: 130px;
+        margin-top: 70px;
         justify-content: center;
         margin-left: 0px;
         align-items: center;
     }
+    .textoCapa2 {
+        margin: 0;
+    }
     .capatxt2 {
+        align-items: center;
         justify-content: center;
+        padding: 0;
+        margin: 0px;
     }
     .textoCapa1 h1 {
         font-size: 30pt;
@@ -696,58 +679,77 @@ body {
         letter-spacing: 1px;
         font-weight: 600;
         margin-top: 50px;
+        margin-bottom: 120px;
         width: 190px;
         padding: 15px 20px 15px 20px !important;
     }
     .logoCapa {
-        width: 120px;
+        width: 130px;
+        margin: 0;
     }
     /* #endregion fim*/
     /* #region opcoes */
     .opcoesTxt {
         margin-top: 40px;
-        font-size: 10pt;
+        font-size: 11pt;
         padding: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        line-height: 25px;
     }
     .opcoesTxt h1 {
-        font-size: 17pt;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 20pt;
     }
     /* #endregion */
     /* #region Cartoes inicio */
     .container {
-        display: flex;
         flex-direction: column;
-        margin-right: 50px !important;
-    }
-    .coluna {
+        justify-content: center;
         margin: 0;
+    }
+    .coluna1 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .coluna2 {
+        margin-right: 20px;
+        margin-left: 20px;
     }
     .cartao {
         text-align: justify;
-        font-size: 11px;
-        padding: 8px;
-        margin-right: 10px;
+        line-height: 20px;
+        font-size: 10pt;
+        font-weight: 600;
+        padding: 10px 15px 25px 10px;
     }
-    .cartao h6 {
-        font-weight: 500;
+    .cartao h1 {
+        font-weight: 600;
+        font-size: 15pt;
+        margin-bottom: 12px;
     }
     .cartao img {
-        margin: 5px;
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 30px;
     }
     /* #endregion */
     /* #region Sessoes inicio*/
     .sessoes {
         flex-direction: column;
-        margin: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
     .sessao {
         padding: 5px;
-        font-size: 8pt;
+        line-height: 20px;
+        font-size: 10pt;
+        font-weight: 600;
         flex-flow: row-reverse;
         text-align: left;
         margin: 7px 0px 7px 0px;
         padding: 0px;
-        box-shadow: none !important;
     }
     .borda {
         border-top: 2px solid #cecece !important;
@@ -763,21 +765,21 @@ body {
         width: 35px;
     }
     .imgMao {
-        margin: 0px 0px 40px 6px;
-        width: 50px;
-        height: 50px;
+        margin: 0px 0px 40px 10px;
+        width: 10px;
+        height: 10px;
         padding: 35px !important;
     }
     .imgSeguranca {
-        margin: 0px 0px 40px 6px;
-        width: 50px;
-        height: 50px;
+        margin: 0px 0px 40px 10px;
+        width: 10px;
+        height: 10px;
         padding: 35px !important;
     }
     .imgNot {
-        margin: 0px 0px 40px 6px;
-        width: 50px;
-        height: 50px;
+        margin: 0px 0px 40px 10px;
+        width: 10px;
+        height: 10px;
         padding: 35px !important;
     }
     .txtSessao {
@@ -785,44 +787,49 @@ body {
         text-align: justify;
     }
     .txtSessao h4 {
-        font-size: 10pt;
+        font-size: 13pt;
         font-weight: 600;
     }
     .globalSessao h1 {
-        margin-bottom: 40px;
-        font-size: 17pt;
+        margin-bottom: 30px;
+        font-size: 20pt;
     }
     .btnMao input,
     .btnSeguranca input,
     .btnNot input {
-        width: 100px;
+        font-size: 13pt;
+        width: 120px;
         padding: 5px 9px 5px 9px;
         margin-bottom: 5px;
     }
     /* #endregion */
     /*#region artigos inicio*/
     .artigos h1 {
-        font-size: 17pt;
+        font-size: 20pt;
     }
     .artigos {
         margin-top: 40px;
     }
     .artigo {
-        font-size: 9pt;
-        padding: 20px 10px 20px 10px;
+        font-size: 10pt;
+        font-weight: 600;
+        line-height: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 0;
         flex-direction: column;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
     .atg {
-        padding: 10px;
+        padding: 20px 15px 20px 15px;
         border-top: 1px solid #cecece;
         border-bottom: 2px solid #cecece;
         border-left: 3px solid #cecece;
         border-right: 3px solid #cecece;
     }
     .atg1 {
-        padding: 10px;
+        padding: 20px 15px 20px 15px;
         border-top: 3px solid #cecece;
         border-bottom: 2px solid #cecece;
         border-right: 3px solid #cecece;
@@ -830,7 +837,7 @@ body {
         border-radius: 3px 3px 0px 0px;
     }
     .atg4 {
-        padding: 10px;
+        padding: 20px 15px 20px 15px;
         border-top: 1px solid #cecece;
         border-bottom: 3px solid #cecece;
         border-right: 3px solid #cecece;
@@ -841,40 +848,42 @@ body {
     .atg1 h1,
     .atg4 h1 {
         color: red;
-        font-size: 10pt;
-        margin: 5px 0 10px 0px;
+        font-size: 13pt;
+        margin: 5px 0 15px 0px;
     }
     /* #endregion */
     /* #region banner*/
     .banner img {
         width: 100%;
-        height: 200px;
+        height: 37.4251497005988vh;
     }
     .banner {
-        height: 200px;
+        height: 37.4251497005988vh;
     }
     .textoBanner {
-        height: 200px;
+        height: 37.4251497005988vh;
     }
     .textoBanner h2 {
-        margin: 0 10 0 10;
-        line-height: 23pt;
-        font-size: 15pt;
+        margin: 0px 5px 0px 5px;
+        line-height: 28pt;
+        font-size: 18pt;
+        font-weight: 500;
     }
     /* #region fale conosco*/
     .faleConosco {
+        font-weight: 600;
+        line-height: 25px;
         margin-top: 40px;
-        font-size: 10pt;
+        font-size: 11pt;
     }
     .faleConosco p {
         padding: 0px 10px 0px 10px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
     .br {
         display: none;
     }
     .form fieldset {
-        width: 85vw;
         padding: 10px;
     }
     .form input {
@@ -882,6 +891,10 @@ body {
     }
     .form textarea {
         width: 79vw;
+        max-width: 79vw;
+        min-width: 79vw;
+        min-height: 10vh;
+        max-height: 15vh;
     }
     /* #endregion */
     /* #region====== Section Footer Mobile =======INICIO ATE 575PX*/
