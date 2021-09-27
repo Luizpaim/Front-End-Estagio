@@ -284,9 +284,6 @@
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    .sessao hr {
-        display: none;
-    }
     .imgSessao {
         margin: 20px;
         width: 50px;
@@ -981,9 +978,9 @@
 /* #endregion */
 
 
-/*#region @media (paisagem) até max 812px Inicio*/
+/*#region @media (paisagem) até max 767px Inicio*/
 
-@media screen and (max-width: 812px) and (orientation:landscape) {
+@media screen and (max-width: 767px) and (orientation:landscape) {
     /* #region Menu e capa inico*/
     a {
         font-size: 13pt;
@@ -1281,7 +1278,7 @@
 
 /* #region n@media (paisagem) até max 1199px */
 
-@media screen and (min-width: 813px) and (max-width: 1199px) and (orientation:landscape) {
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
     /* #region Menu e capa inico*/
     a {
         font-size: 20pt;
@@ -1309,65 +1306,33 @@
         justify-content: space-between !important;
     }
     /* #region Capa inicio*/
-    .imgCapa {
-        background: url("../images/capa.png") no-repeat center;
-        background-size: cover;
-        height: 90vh;
-    }
-    .imgCapa .capa {
-        display: none;
-    }
-    .backgroundBlack {
-        height: 90vh;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-    }
-    .setaCapa {
-        display: none;
-    }
     .textoCapa1 {
-        margin-top: 70px;
-        justify-content: center;
-        margin-left: 0px;
-        align-items: center;
-    }
-    .textoCapa2 {
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .capatxt2 {
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        margin: 0px;
+        justify-content: flex-end;
     }
     .textoCapa1 h1 {
-        font-size: 5em;
-        margin-bottom: 80px;
+        font-size: 25pt;
+        margin-bottom: 20px;
     }
-    .textoCapa1 h2 {
-        text-align: center;
-        margin-bottom: 50px;
-        line-height: 30pt;
-        font-size: 2em;
-        font-family: 'normal';
-        font-weight: 600;
-        margin-left: 5px;
-        margin-right: 5px;
+    .textoCapa1 h4 {
+        font-size: 15pt;
+        margin-bottom: 0px;
     }
     .btnCapa {
-        font-size: 20pt;
-        letter-spacing: 1px;
+        font-size: 15pt;
+        margin-top: 30px;
+        width: 150px;
         font-weight: 600;
-        margin-top: 50px;
-        margin-bottom: 80px;
-        width: 250px;
-        padding: 15px 20px 15px 20px !important;
+        margin-bottom: 20px;
     }
     .logoCapa {
-        width: 200px;
-        margin: 0;
+        width: 100px;
+        margin-right: 40px;
     }
+    /* #endregion fim*/
     /* #endregion fim*/
     /* #region opcoes */
     .opcoesTxt {
@@ -1546,8 +1511,8 @@
     }
     .textoBanner h2 {
         margin: 0px 5px 0px 5px;
-        line-height: 45pt;
-        font-size: 30pt;
+        line-height: 30pt;
+        font-size: 18pt;
         font-weight: 500;
     }
     /* #region fale conosco*/

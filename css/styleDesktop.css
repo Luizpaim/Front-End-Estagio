@@ -49,8 +49,6 @@ a {
     text-decoration: none;
     font-family: 'subTitulo';
     transition: 0.03s;
-    font-weight: 500;
-    font-size: 13pt;
 }
 
 a:hover {
@@ -91,7 +89,7 @@ a:hover {
 }
 
 .logo {
-    margin-right: 0;
+    margin-right: 300px;
 }
 
 nav {
@@ -103,11 +101,11 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: #4169E1;
-    height: 12vh;
+    height: 12.030075187969924vh;
 }
 
 header {
-    height: 12vh;
+    height: 12.030075187969924vh;
 }
 
 .nav-list {
@@ -164,41 +162,41 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 150px;
+    margin-top: 22.55639097744361vh;
 }
 
 .textoCapa2 {
-    margin-right: 150px;
+    margin-right: 10.980966325036603vw;
 }
 
 .setaCapa {
-    margin-left: 150px;
+    margin-left: 10.980966325036603vw;
 }
 
 .textoCapa1 {
-    margin-top: 100px;
+    margin-top: 15.037593984962406vh;
     display: flex;
     justify-content: start;
     flex-direction: column;
-    margin-left: 150px;
+    margin-left: 10.980966325036603vw;
 }
 
 .textoCapa1 h1 {
     font-weight: 500;
     font-size: 5em;
     font-family: 'subTitulo';
-    margin-bottom: 30px;
+    margin-bottom: 4.511278195488722vh;
 }
 
 .textoCapa1 h2 {
     letter-spacing: 2px;
     font-family: 'normal';
     font-size: 1.8em;
-    margin-bottom: 80px;
+    margin-bottom: 12.030075187969924vh;
 }
 
 .btnCapa {
-    width: 260px;
+    width: 19.03367496339678vw;
     padding: 13px;
     border: none;
     background-color: #1E90FF;
@@ -319,7 +317,7 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 0px 60px 0px 60px;
+    margin: 0px 50px 0px 50px;
     text-align: center;
     font-size: 13pt;
     transition: box-shadow 0.3s;
@@ -437,7 +435,7 @@ header {
 hr {
     margin-bottom: 20px;
     width: 50px;
-    margin-left: 80px;
+    margin-left: 150px;
 }
 
 
@@ -461,14 +459,14 @@ hr {
     padding: 20px 120px 20px 120px;
     margin-bottom: 60px;
     font-size: 13pt;
-    line-height: 20px;
+    line-height: 25px;
 }
 
 .atg {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 30px 40px 40px 40px;
+    padding: 30px 50px 30px 50px;
     text-align: center;
     border-top: 3px solid #cecece;
     border-bottom: 3px solid #cecece;
@@ -486,7 +484,7 @@ hr {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 30px 40px 40px 40px;
+    padding: 30px 50px 30px 50px;
     text-align: center;
     transition: bacground 0.3s;
 }
@@ -534,7 +532,7 @@ hr {
 
 .banner img {
     width: 100%;
-    height: 300px;
+    height: 45.11278195488722vh;
 }
 
 .textoBanner {
@@ -547,7 +545,7 @@ hr {
     letter-spacing: 1px;
     background-color: rgba(0, 0, 0, .6);
     width: 100%;
-    height: 300px;
+    height: 45.11278195488722vh;
     margin: 0;
     transition: background .3s;
 }
@@ -558,7 +556,7 @@ hr {
 }
 
 .textoBanner h2 {
-    font-size: 30pt;
+    font-size: 2.5080em;
     line-height: 50px;
     font-weight: 500;
 }
@@ -604,7 +602,7 @@ hr {
     height: 40px;
     border: none;
     border-radius: 3px;
-    width: 450px;
+    width: 400px;
     margin-bottom: 25px;
     margin-top: 5px;
     transition: all 0.3s;
@@ -624,12 +622,12 @@ hr {
 }
 
 .form textarea {
-    max-width: 450px;
-    min-width: 450px;
+    max-width: 400px;
+    min-width: 400px;
     min-height: 50px;
     max-height: 200px;
     text-align: justify;
-    width: 450px;
+    width: 400px;
     border: none;
     border-radius: 3px;
     transition: all 0.3s;
