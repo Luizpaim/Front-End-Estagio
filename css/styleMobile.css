@@ -978,9 +978,9 @@
 /* #endregion */
 
 
-/*#region @media (paisagem) até max 767px Inicio*/
+/*#region @media (paisagem) até max 768px Inicio*/
 
-@media screen and (max-width: 767px) and (orientation:landscape) {
+@media screen and (max-width: 768px) and (orientation:landscape) {
     /* #region Menu e capa inico*/
     a {
         font-size: 13pt;
@@ -1278,7 +1278,7 @@
 
 /* #region n@media (paisagem) até max 1199px */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
+@media screen and (min-width: 769px) and (max-width: 992px) and (orientation:landscape) {
     /* #region Menu e capa inico*/
     a {
         font-size: 20pt;
