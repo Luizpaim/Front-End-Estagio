@@ -80,8 +80,8 @@
 /*#region Menu Principal de 575pxs até 1199.98pxs*/
 
 @media (min-width: 576.98px) and (max-width: 1199.98px) {
-    body {
-        overflow-x: hidden;
+    a {
+        font-size: 20pt;
     }
     .logo {
         display: none;
@@ -91,9 +91,10 @@
     }
     .loginMobile {
         display: block;
-        padding: 10px 40px 10px 40px;
+        padding: 10px 20px 10px 20px;
         border: none;
         font-size: 15pt;
+        margin-right: 10px;
     }
     .nav-list {
         position: absolute;
@@ -137,6 +138,9 @@
     .mobile-menu.active .line3 {
         transform: rotate(45deg) translate(-5px, -7px);
     }
+    header {
+        height: 10vh;
+    }
     nav {
         height: 10vh;
         justify-content: space-around !important;
@@ -152,70 +156,133 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     /* #region Capa inicio*/
     .imgCapa {
-        background: url("../images/capa.jpg") no-repeat center center;
+        background: url("../images/capa.png") no-repeat center;
         background-size: cover;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        width: 100%;
+        height: 90vh;
+    }
+    .imgCapa .capa {
+        display: none;
     }
     .backgroundBlack {
-        text-align: center;
-        height: 100vh;
-        margin: 0px;
-        width: 100%;
+        height: 90vh;
+        position: relative;
+        align-items: center;
+        justify-content: center;
     }
     .setaCapa {
         display: none;
     }
     .textoCapa1 {
-        width: 100%;
-        display: flex;
+        margin-top: 70px;
         justify-content: center;
-        flex-direction: column;
-        margin-top: 250px;
-        margin-bottom: 300px;
+        margin-left: 0px;
+        align-items: center;
+    }
+    .textoCapa2 {
+        margin: 0;
     }
     .capatxt2 {
+        align-items: center;
         justify-content: center;
+        padding: 0;
+        margin: 0px;
     }
     .textoCapa1 h1 {
-        font-size: 70pt;
-        margin-bottom: 30px;
+        font-size: 5em;
+        margin-bottom: 80px;
     }
-    .textoCapa1 h4 {
-        margin-bottom: 30px;
-        line-height: 25pt;
+    .textoCapa1 h2 {
+        text-align: center;
+        margin-bottom: 50px;
+        line-height: 30pt;
+        font-size: 2em;
+        font-family: 'normal';
+        font-weight: 600;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .btnCapa {
+        font-size: 20pt;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-top: 50px;
+        margin-bottom: 200px;
+        width: 220px;
+        padding: 15px 20px 15px 20px !important;
+    }
+    .logoCapa {
+        width: 200px;
+        margin: 0;
     }
     /* #endregion fim*/
+    /* #region opcoes */
+    .opcoesTxt {
+        margin-top: 40px;
+        font-size: 15pt;
+        padding: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        line-height: 25px;
+    }
+    .opcoesTxt h1 {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 25pt;
+    }
+    /* #endregion */
     /* #region Cartoes inicio */
     .container {
-        display: flex;
         flex-direction: column;
-    }
-    .coluna {
+        justify-content: center;
         margin: 0;
+    }
+    .coluna1 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .coluna2 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .cartao {
+        text-align: justify;
+        line-height: 20px;
+        font-size: 15pt;
+        font-weight: 600;
+        padding: 10px 15px 25px 10px;
+    }
+    .cartao h1 {
+        font-weight: 600;
+        font-size: 15pt;
+        margin-bottom: 12px;
+    }
+    .cartao img {
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 30px;
     }
     /* #endregion */
     /* #region Sessoes inicio*/
     .sessoes {
         flex-direction: column;
-        margin: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
     .sessao {
         padding: 5px;
-        font-size: 13pt;
+        line-height: 20px;
+        font-size: 15pt;
+        font-weight: 600;
         flex-flow: row-reverse;
         text-align: left;
-        margin: 20px 0px 20px 0px;
+        margin: 7px 0px 7px 0px;
         padding: 0px;
-        box-shadow: none !important;
     }
     .borda {
         border-top: 2px solid #cecece !important;
         border-bottom: 2px solid #cecece !important;
-        padding-top: 30px;
-        padding-bottom: 40px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     .sessao hr {
         display: none;
@@ -225,50 +292,71 @@
         width: 50px;
     }
     .imgMao {
-        margin: 0px 6px 40px 10px;
-        width: 140px;
-        height: 140px;
+        margin: 0px 0px 40px 10px;
+        width: 40px;
+        height: 40px;
         padding: 35px !important;
     }
     .imgSeguranca {
-        margin: 0px 6px 40px 10px;
-        width: 140px;
-        height: 140px;
+        margin: 0px 0px 40px 10px;
+        width: 40px;
+        height: 40px;
         padding: 35px !important;
     }
     .imgNot {
-        margin: 0px 6px 40px 10px;
-        width: 140px;
-        height: 140px;
+        margin: 0px 0px 40px 10px;
+        width: 40px;
+        height: 40px;
         padding: 35px !important;
     }
     .txtSessao {
         padding: 2px;
         text-align: justify;
     }
+    .txtSessao h4 {
+        font-size: 15pt;
+        font-weight: 600;
+    }
     .globalSessao h1 {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+        font-size: 25pt;
+    }
+    .btnMao input,
+    .btnSeguranca input,
+    .btnNot input {
+        font-size: 15pt;
+        width: 150px;
+        padding: 5px 9px 5px 9px;
+        margin-bottom: 5px;
     }
     /* #endregion */
     /*#region artigos inicio*/
+    .artigos h1 {
+        font-size: 25pt;
+    }
     .artigos {
         margin-top: 40px;
     }
     .artigo {
-        padding: 50px 10px 50px 10px;
+        font-size: 15pt;
+        font-weight: 600;
+        line-height: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 0;
         flex-direction: column;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
     .atg {
-        padding: 10px;
+        padding: 20px 15px 20px 15px;
         border-top: 1px solid #cecece;
         border-bottom: 2px solid #cecece;
         border-left: 3px solid #cecece;
         border-right: 3px solid #cecece;
     }
     .atg1 {
-        padding: 10px;
+        padding: 20px 15px 20px 15px;
         border-top: 3px solid #cecece;
         border-bottom: 2px solid #cecece;
         border-right: 3px solid #cecece;
@@ -276,31 +364,51 @@
         border-radius: 3px 3px 0px 0px;
     }
     .atg4 {
-        padding: 10px;
+        padding: 20px 15px 20px 15px;
         border-top: 1px solid #cecece;
         border-bottom: 3px solid #cecece;
         border-right: 3px solid #cecece;
         border-left: 3px solid #cecece;
         border-radius: 0px 0px 3px 3px;
     }
+    .atg h1,
+    .atg1 h1,
+    .atg4 h1 {
+        color: red;
+        font-size: 15pt;
+        margin: 5px 0 15px 0px;
+    }
     /* #endregion */
     /* #region banner*/
+    .banner img {
+        width: 100%;
+        height: 37.4251497005988vh;
+    }
+    .banner {
+        height: 37.4251497005988vh;
+    }
+    .textoBanner {
+        height: 37.4251497005988vh;
+    }
     .textoBanner h2 {
-        font-size: 20pt;
-        line-height: 23pt;
+        margin: 0px 5px 0px 5px;
+        line-height: 45pt;
+        font-size: 25pt;
+        font-weight: 500;
     }
     /* #region fale conosco*/
     .faleConosco {
-        margin-top: 140px;
+        font-weight: 600;
+        line-height: 25px;
+        font-size: 15pt;
     }
     .faleConosco p {
-        padding: 10px;
+        padding: 0px 10px 0px 10px;
+        margin-bottom: 0px;
     }
     /* #endregion */
+    /* #endregion */
 }
-
-
-/* #endregion fim */
 
 
 /* #endregion */
@@ -308,73 +416,136 @@
 
 /* #region @media (min-width: 767.98px) and (max-width: 991.98px) Inicio*/
 
-@media(min-width: 767.98px) and (max-width: 991.98px) {
+@media(min-width: 767.98px) and (max-width: 991px) {
     /* #region Capa inicio*/
     .imgCapa {
-        background: url("../images/capa.jpg") no-repeat center center;
+        background: url("../images/capa.png") no-repeat center;
         background-size: cover;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        width: 100%;
+        height: 90vh;
+    }
+    .imgCapa .capa {
+        display: none;
     }
     .backgroundBlack {
-        text-align: center;
-        height: 100vh;
-        margin: 0px;
-        width: 100%;
+        height: 90vh;
+        position: relative;
+        align-items: center;
+        justify-content: center;
     }
     .setaCapa {
         display: none;
     }
     .textoCapa1 {
-        width: 100%;
-        display: flex;
+        margin-top: 70px;
         justify-content: center;
-        flex-direction: column;
-        margin-top: 250px;
-        margin-bottom: 300px;
+        margin-left: 0px;
+        align-items: center;
+    }
+    .textoCapa2 {
+        margin: 0;
     }
     .capatxt2 {
+        align-items: center;
         justify-content: center;
+        padding: 0;
+        margin: 0px;
     }
     .textoCapa1 h1 {
-        font-size: 70pt;
-        margin-bottom: 30px;
+        font-size: 5em;
+        margin-bottom: 80px;
     }
-    .textoCapa1 h4 {
-        margin-bottom: 30px;
-        line-height: 25pt;
+    .textoCapa1 h2 {
+        text-align: center;
+        margin-bottom: 50px;
+        line-height: 30pt;
+        font-size: 2em;
+        font-family: 'normal';
+        font-weight: 600;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .btnCapa {
+        font-size: 20pt;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-top: 50px;
+        margin-bottom: 200px;
+        width: 220px;
+        padding: 15px 20px 15px 20px !important;
+    }
+    .logoCapa {
+        width: 200px;
+        margin: 0;
     }
     /* #endregion fim*/
+    /* #region opcoes */
+    .opcoesTxt {
+        margin-top: 40px;
+        font-size: 15pt;
+        padding: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        line-height: 25px;
+    }
+    .opcoesTxt h1 {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 25pt;
+    }
+    /* #endregion */
     /* #region Cartoes inicio */
     .container {
-        display: flex;
         flex-direction: column;
-    }
-    .coluna {
+        justify-content: center;
         margin: 0;
+    }
+    .coluna1 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .coluna2 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .cartao {
+        text-align: justify;
+        line-height: 20px;
+        font-size: 15pt;
+        font-weight: 600;
+        padding: 10px 15px 25px 10px;
+    }
+    .cartao h1 {
+        font-weight: 600;
+        font-size: 15pt;
+        margin-bottom: 12px;
+    }
+    .cartao img {
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 30px;
     }
     /* #endregion */
     /* #region Sessoes inicio*/
     .sessoes {
         flex-direction: column;
-        margin: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
     .sessao {
         padding: 5px;
-        font-size: 13pt;
+        line-height: 20px;
+        font-size: 15pt;
+        font-weight: 600;
         flex-flow: row-reverse;
         text-align: left;
-        margin: 20px 0px 20px 0px;
+        margin: 7px 0px 7px 0px;
         padding: 0px;
-        box-shadow: none !important;
     }
     .borda {
         border-top: 2px solid #cecece !important;
         border-bottom: 2px solid #cecece !important;
-        padding-top: 30px;
-        padding-bottom: 40px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     .sessao hr {
         display: none;
@@ -384,50 +555,71 @@
         width: 50px;
     }
     .imgMao {
-        margin: 0px 0px 40px 6px;
-        width: 140px;
-        height: 140px;
+        margin: 0px 0px 40px 10px;
+        width: 40px;
+        height: 40px;
         padding: 35px !important;
     }
     .imgSeguranca {
-        margin: 0px 0px 40px 6px;
-        width: 140px;
-        height: 140px;
+        margin: 0px 0px 40px 10px;
+        width: 40px;
+        height: 40px;
         padding: 35px !important;
     }
     .imgNot {
-        margin: 0px 0px 40px 6px;
-        width: 140px;
-        height: 140px;
+        margin: 0px 0px 40px 10px;
+        width: 40px;
+        height: 40px;
         padding: 35px !important;
     }
     .txtSessao {
         padding: 2px;
         text-align: justify;
     }
+    .txtSessao h4 {
+        font-size: 15pt;
+        font-weight: 600;
+    }
     .globalSessao h1 {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+        font-size: 25pt;
+    }
+    .btnMao input,
+    .btnSeguranca input,
+    .btnNot input {
+        font-size: 15pt;
+        width: 150px;
+        padding: 5px 9px 5px 9px;
+        margin-bottom: 5px;
     }
     /* #endregion */
     /*#region artigos inicio*/
+    .artigos h1 {
+        font-size: 25pt;
+    }
     .artigos {
         margin-top: 40px;
     }
     .artigo {
-        padding: 50px 10px 50px 10px;
+        font-size: 15pt;
+        font-weight: 600;
+        line-height: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 0;
         flex-direction: column;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
     .atg {
-        padding: 10px;
+        padding: 20px 15px 20px 15px;
         border-top: 1px solid #cecece;
         border-bottom: 2px solid #cecece;
         border-left: 3px solid #cecece;
         border-right: 3px solid #cecece;
     }
     .atg1 {
-        padding: 10px;
+        padding: 20px 15px 20px 15px;
         border-top: 3px solid #cecece;
         border-bottom: 2px solid #cecece;
         border-right: 3px solid #cecece;
@@ -435,184 +627,47 @@
         border-radius: 3px 3px 0px 0px;
     }
     .atg4 {
-        padding: 10px;
+        padding: 20px 15px 20px 15px;
         border-top: 1px solid #cecece;
         border-bottom: 3px solid #cecece;
         border-right: 3px solid #cecece;
         border-left: 3px solid #cecece;
         border-radius: 0px 0px 3px 3px;
     }
-    /* #endregion */
-    /* #region banner*/
-    .textoBanner h2 {
-        font-size: 20pt;
-        line-height: 23pt;
-    }
-    /* #region fale conosco*/
-    .faleConosco {
-        margin-top: 140px;
-    }
-    .faleConosco p {
-        padding: 10px;
-    }
-    /* #endregion */
-}
-
-
-/* #endregion */
-
-
-/* #endregion Fim */
-
-
-/* #region @media (min-width: 576px) and (max-width: 766.98px) Inicio*/
-
-@media (min-width: 576px) and (max-width: 766.98px) {
-    /* #region Capa inicio*/
-    .imgCapa {
-        background: url("../images/capa.jpg") no-repeat center center;
-        background-size: cover;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    .backgroundBlack {
-        text-align: center;
-        height: 100vh;
-        margin: 0px;
-        width: 100%;
-    }
-    .setaCapa {
-        display: none;
-    }
-    .textoCapa1 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 200px;
-        margin-bottom: 150px;
-    }
-    .capatxt2 {
-        justify-content: center;
-    }
-    .textoCapa1 h1 {
-        font-size: 50pt;
-        margin-bottom: 30px;
-    }
-    .textoCapa1 h4 {
-        margin-bottom: 30px;
-        line-height: 25pt;
-    }
-    /* #endregion fim*/
-    /* #region Cartoes inicio */
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-    .coluna {
-        margin: 0;
-    }
-    /* #endregion */
-    /* #region Sessoes inicio*/
-    .sessoes {
-        flex-direction: column;
-        margin: 10px;
-    }
-    .sessao {
-        padding: 5px;
-        font-size: 13pt;
-        flex-flow: row-reverse;
-        text-align: left;
-        margin: 20px 0px 20px 0px;
-        padding: 0px;
-        box-shadow: none !important;
-    }
-    .borda {
-        border-top: 2px solid #cecece !important;
-        border-bottom: 2px solid #cecece !important;
-        padding-top: 30px;
-        padding-bottom: 40px;
-    }
-    .sessao hr {
-        display: none;
-    }
-    .imgSessao {
-        margin: 20px;
-        width: 50px;
-    }
-    .imgMao {
-        margin: 0px 0px 40px 6px;
-        width: 140px;
-        height: 140px;
-        padding: 35px !important;
-    }
-    .imgSeguranca {
-        margin: 0px 0px 40px 6px;
-        width: 140px;
-        height: 140px;
-        padding: 35px !important;
-    }
-    .imgNot {
-        margin: 0px 0px 40px 6px;
-        width: 140px;
-        height: 140px;
-        padding: 35px !important;
-    }
-    .txtSessao {
-        padding: 2px;
-        text-align: justify;
-    }
-    .globalSessao h1 {
-        margin-bottom: 40px;
-    }
-    /* #endregion */
-    /*#region artigos inicio*/
-    .artigos {
-        margin-top: 40px;
-    }
-    .artigo {
-        padding: 50px 10px 50px 10px;
-        flex-direction: column;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    .atg {
-        padding: 10px;
-        border-top: 1px solid #cecece;
-        border-bottom: 2px solid #cecece;
-        border-left: 3px solid #cecece;
-        border-right: 3px solid #cecece;
-    }
-    .atg1 {
-        padding: 10px;
-        border-top: 3px solid #cecece;
-        border-bottom: 2px solid #cecece;
-        border-right: 3px solid #cecece;
-        border-left: 3px solid #cecece;
-        border-radius: 3px 3px 0px 0px;
-    }
-    .atg4 {
-        padding: 10px;
-        border-top: 1px solid #cecece;
-        border-bottom: 3px solid #cecece;
-        border-right: 3px solid #cecece;
-        border-left: 3px solid #cecece;
-        border-radius: 0px 0px 3px 3px;
+    .atg h1,
+    .atg1 h1,
+    .atg4 h1 {
+        color: red;
+        font-size: 15pt;
+        margin: 5px 0 15px 0px;
     }
     /* #endregion */
     /* #region banner*/
+    .banner img {
+        width: 100%;
+        height: 37.4251497005988vh;
+    }
+    .banner {
+        height: 37.4251497005988vh;
+    }
+    .textoBanner {
+        height: 37.4251497005988vh;
+    }
     .textoBanner h2 {
-        font-size: 20pt;
-        line-height: 23pt;
+        margin: 0px 5px 0px 5px;
+        line-height: 45pt;
+        font-size: 30pt;
+        font-weight: 500;
     }
     /* #region fale conosco*/
     .faleConosco {
-        margin-top: 140px;
+        font-weight: 600;
+        line-height: 25px;
+        font-size: 15pt;
     }
     .faleConosco p {
-        padding: 10px;
+        padding: 0px 10px 0px 10px;
+        margin-bottom: 0px;
     }
     /* #endregion */
 }
@@ -624,9 +679,9 @@
 /* #endregion */
 
 
-/* #region @media (max-width: 575.98px) Inicio*/
+/* #region @media (max-width: 766px) Inicio*/
 
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 766px) {
     /* #region Capa inicio*/
     .imgCapa {
         background: url("../images/capa.png") no-repeat center;
@@ -926,19 +981,29 @@
 /* #endregion */
 
 
-/*#region @media (paisagem) até max 768px Inicio*/
+/*#region @media (paisagem) até max 812px Inicio*/
 
-@media screen and (max-width: 768px) and (orientation:landscape) {
+@media screen and (max-width: 812px) and (orientation:landscape) {
     /* #region Menu e capa inico*/
+    a {
+        font-size: 13pt;
+    }
+    .mobile-menu {
+        margin-left: 10px;
+        display: block;
+    }
     .loginMobile {
-        padding: 5px 10px 5px 10px;
+        padding: 8px 10px 8px 10px;
         font-size: 10pt;
-        margin-right: 20px;
+        margin-right: 35px;
     }
     .nav-list {
         top: 13vh;
         left: 0px;
         font-size: 13pt;
+    }
+    header {
+        height: 13vh;
     }
     nav {
         height: 13vh;
@@ -947,7 +1012,7 @@
     }
     /* #region Capa inicio*/
     .textoCapa1 {
-        margin-top: 80px;
+        margin-top: 0;
         margin-bottom: 0;
     }
     .capatxt2 {
@@ -966,55 +1031,75 @@
         margin-top: 30px;
         width: 120px;
         font-weight: 600;
+        margin-bottom: 20px;
     }
     .logoCapa {
         width: 100px;
-        margin-right: 30px;
+        margin-right: 40px;
     }
     /* #endregion fim*/
     /* #region opcoes */
     .opcoesTxt {
         margin-top: 40px;
-        font-size: 10pt;
+        font-size: 11pt;
         padding: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        line-height: 25px;
     }
     .opcoesTxt h1 {
-        font-size: 17pt;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 20pt;
     }
     /* #endregion */
     /* #region Cartoes inicio */
     .container {
-        display: flex;
         flex-direction: column;
-    }
-    .coluna {
+        justify-content: center;
         margin: 0;
+    }
+    .coluna1 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .coluna2 {
+        margin-right: 20px;
+        margin-left: 20px;
     }
     .cartao {
         text-align: justify;
-        font-size: 11px;
-        padding: 8px;
+        line-height: 20px;
+        font-size: 10pt;
+        font-weight: 600;
+        padding: 10px 15px 25px 10px;
     }
-    .cartao h6 {
-        font-weight: 500;
+    .cartao h1 {
+        font-weight: 600;
+        font-size: 15pt;
+        margin-bottom: 12px;
     }
     .cartao img {
-        margin: 5px;
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 30px;
     }
     /* #endregion */
     /* #region Sessoes inicio*/
     .sessoes {
         flex-direction: column;
-        margin: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
     .sessao {
         padding: 5px;
-        font-size: 8pt;
+        line-height: 20px;
+        font-size: 10pt;
+        font-weight: 600;
         flex-flow: row-reverse;
         text-align: left;
         margin: 7px 0px 7px 0px;
         padding: 0px;
-        box-shadow: none !important;
     }
     .borda {
         border-top: 2px solid #cecece !important;
@@ -1030,21 +1115,21 @@
         width: 35px;
     }
     .imgMao {
-        margin: 0px 0px 40px 6px;
-        width: 50px;
-        height: 50px;
+        margin: 0px 0px 40px 10px;
+        width: 10px;
+        height: 10px;
         padding: 35px !important;
     }
     .imgSeguranca {
-        margin: 0px 0px 40px 6px;
-        width: 50px;
-        height: 50px;
+        margin: 0px 0px 40px 10px;
+        width: 10px;
+        height: 10px;
         padding: 35px !important;
     }
     .imgNot {
-        margin: 0px 0px 40px 6px;
-        width: 50px;
-        height: 50px;
+        margin: 0px 0px 40px 10px;
+        width: 10px;
+        height: 10px;
         padding: 35px !important;
     }
     .txtSessao {
@@ -1052,44 +1137,49 @@
         text-align: justify;
     }
     .txtSessao h4 {
-        font-size: 10pt;
+        font-size: 13pt;
         font-weight: 600;
     }
     .globalSessao h1 {
-        margin-bottom: 40px;
-        font-size: 17pt;
+        margin-bottom: 30px;
+        font-size: 20pt;
     }
     .btnMao input,
     .btnSeguranca input,
     .btnNot input {
-        width: 100px;
+        font-size: 13pt;
+        width: 120px;
         padding: 5px 9px 5px 9px;
         margin-bottom: 5px;
     }
     /* #endregion */
     /*#region artigos inicio*/
     .artigos h1 {
-        font-size: 17pt;
+        font-size: 20pt;
     }
     .artigos {
         margin-top: 40px;
     }
     .artigo {
-        font-size: 9pt;
-        padding: 20px 10px 20px 10px;
+        font-size: 10pt;
+        font-weight: 600;
+        line-height: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 0;
         flex-direction: column;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
     .atg {
-        padding: 10px;
+        padding: 20px 15px 20px 15px;
         border-top: 1px solid #cecece;
         border-bottom: 2px solid #cecece;
         border-left: 3px solid #cecece;
         border-right: 3px solid #cecece;
     }
     .atg1 {
-        padding: 10px;
+        padding: 20px 15px 20px 15px;
         border-top: 3px solid #cecece;
         border-bottom: 2px solid #cecece;
         border-right: 3px solid #cecece;
@@ -1097,7 +1187,7 @@
         border-radius: 3px 3px 0px 0px;
     }
     .atg4 {
-        padding: 10px;
+        padding: 20px 15px 20px 15px;
         border-top: 1px solid #cecece;
         border-bottom: 3px solid #cecece;
         border-right: 3px solid #cecece;
@@ -1108,40 +1198,42 @@
     .atg1 h1,
     .atg4 h1 {
         color: red;
-        font-size: 10pt;
-        margin: 5px 0 10px 0px;
+        font-size: 13pt;
+        margin: 5px 0 15px 0px;
     }
     /* #endregion */
     /* #region banner*/
     .banner img {
         width: 100%;
-        height: 200px;
+        height: 37.4251497005988vh;
     }
     .banner {
-        height: 200px;
+        height: 37.4251497005988vh;
     }
     .textoBanner {
-        height: 200px;
+        height: 37.4251497005988vh;
     }
     .textoBanner h2 {
-        margin: 0 10 0 10;
-        line-height: 23pt;
-        font-size: 15pt;
+        margin: 0px 5px 0px 5px;
+        line-height: 28pt;
+        font-size: 18pt;
+        font-weight: 500;
     }
     /* #region fale conosco*/
     .faleConosco {
+        font-weight: 600;
+        line-height: 25px;
         margin-top: 40px;
-        font-size: 10pt;
+        font-size: 11pt;
     }
     .faleConosco p {
         padding: 0px 10px 0px 10px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
     .br {
         display: none;
     }
     .form fieldset {
-        width: 85vw;
         padding: 10px;
     }
     .form input {
@@ -1149,6 +1241,10 @@
     }
     .form textarea {
         width: 79vw;
+        max-width: 79vw;
+        min-width: 79vw;
+        min-height: 10vh;
+        max-height: 15vh;
     }
     /* #endregion */
     /* #region====== Section Footer Mobile =======INICIO ATE 575PX*/
@@ -1183,4 +1279,295 @@
 /* #endregion */
 
 
-/* #region@media (paisagem) até max 1024px */
+/* #region n@media (paisagem) até max 1199px */
+
+@media screen and (min-width: 813px) and (max-width: 1199px) and (orientation:landscape) {
+    /* #region Menu e capa inico*/
+    a {
+        font-size: 20pt;
+    }
+    .mobile-menu {
+        margin-left: 10px;
+        display: block;
+    }
+    .loginMobile {
+        padding: 10px 15px 10px 15px;
+        font-size: 13pt;
+        margin-right: 35px;
+    }
+    .nav-list {
+        top: 15vh;
+        left: 0px;
+        font-size: 13pt;
+    }
+    header {
+        height: 15vh;
+    }
+    nav {
+        height: 15vh;
+        padding: 0;
+        justify-content: space-between !important;
+    }
+    /* #region Capa inicio*/
+    .imgCapa {
+        background: url("../images/capa.png") no-repeat center;
+        background-size: cover;
+        height: 90vh;
+    }
+    .imgCapa .capa {
+        display: none;
+    }
+    .backgroundBlack {
+        height: 90vh;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    .setaCapa {
+        display: none;
+    }
+    .textoCapa1 {
+        margin-top: 70px;
+        justify-content: center;
+        margin-left: 0px;
+        align-items: center;
+    }
+    .textoCapa2 {
+        margin: 0;
+    }
+    .capatxt2 {
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0px;
+    }
+    .textoCapa1 h1 {
+        font-size: 5em;
+        margin-bottom: 80px;
+    }
+    .textoCapa1 h2 {
+        text-align: center;
+        margin-bottom: 50px;
+        line-height: 30pt;
+        font-size: 2em;
+        font-family: 'normal';
+        font-weight: 600;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .btnCapa {
+        font-size: 20pt;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-top: 50px;
+        margin-bottom: 80px;
+        width: 250px;
+        padding: 15px 20px 15px 20px !important;
+    }
+    .logoCapa {
+        width: 200px;
+        margin: 0;
+    }
+    /* #endregion fim*/
+    /* #region opcoes */
+    .opcoesTxt {
+        margin-top: 40px;
+        font-size: 15pt;
+        padding: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        line-height: 25px;
+    }
+    .opcoesTxt h1 {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 25pt;
+    }
+    /* #endregion */
+    /* #region Cartoes inicio */
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+    .coluna1 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .coluna2 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .cartao {
+        text-align: justify;
+        line-height: 20px;
+        font-size: 15pt;
+        font-weight: 600;
+        padding: 10px 15px 25px 10px;
+    }
+    .cartao h1 {
+        font-weight: 600;
+        font-size: 15pt;
+        margin-bottom: 12px;
+    }
+    .cartao img {
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 30px;
+    }
+    /* #endregion */
+    /* #region Sessoes inicio*/
+    .sessoes {
+        flex-direction: column;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .sessao {
+        padding: 5px;
+        line-height: 20px;
+        font-size: 15pt;
+        font-weight: 600;
+        flex-flow: row-reverse;
+        text-align: left;
+        margin: 7px 0px 7px 0px;
+        padding: 0px;
+    }
+    .borda {
+        border-top: 2px solid #cecece !important;
+        border-bottom: 2px solid #cecece !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .sessao hr {
+        display: none;
+    }
+    .imgSessao {
+        margin: 20px;
+        width: 50px;
+    }
+    .imgMao {
+        margin: 0px 0px 40px 10px;
+        width: 40px;
+        height: 40px;
+        padding: 35px !important;
+    }
+    .imgSeguranca {
+        margin: 0px 0px 40px 10px;
+        width: 40px;
+        height: 40px;
+        padding: 35px !important;
+    }
+    .imgNot {
+        margin: 0px 0px 40px 10px;
+        width: 40px;
+        height: 40px;
+        padding: 35px !important;
+    }
+    .txtSessao {
+        padding: 2px;
+        text-align: justify;
+    }
+    .txtSessao h4 {
+        font-size: 15pt;
+        font-weight: 600;
+    }
+    .globalSessao h1 {
+        margin-bottom: 30px;
+        font-size: 25pt;
+    }
+    .btnMao input,
+    .btnSeguranca input,
+    .btnNot input {
+        font-size: 15pt;
+        width: 150px;
+        padding: 5px 9px 5px 9px;
+        margin-bottom: 5px;
+    }
+    /* #endregion */
+    /*#region artigos inicio*/
+    .artigos h1 {
+        font-size: 25pt;
+    }
+    .artigos {
+        margin-top: 40px;
+    }
+    .artigo {
+        font-size: 15pt;
+        font-weight: 600;
+        line-height: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 0;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .atg {
+        padding: 20px 15px 20px 15px;
+        border-top: 1px solid #cecece;
+        border-bottom: 2px solid #cecece;
+        border-left: 3px solid #cecece;
+        border-right: 3px solid #cecece;
+    }
+    .atg1 {
+        padding: 20px 15px 20px 15px;
+        border-top: 3px solid #cecece;
+        border-bottom: 2px solid #cecece;
+        border-right: 3px solid #cecece;
+        border-left: 3px solid #cecece;
+        border-radius: 3px 3px 0px 0px;
+    }
+    .atg4 {
+        padding: 20px 15px 20px 15px;
+        border-top: 1px solid #cecece;
+        border-bottom: 3px solid #cecece;
+        border-right: 3px solid #cecece;
+        border-left: 3px solid #cecece;
+        border-radius: 0px 0px 3px 3px;
+    }
+    .atg h1,
+    .atg1 h1,
+    .atg4 h1 {
+        color: red;
+        font-size: 15pt;
+        margin: 5px 0 15px 0px;
+    }
+    /* #endregion */
+    /* #region banner*/
+    .banner img {
+        width: 100%;
+        height: 37.4251497005988vh;
+    }
+    .banner {
+        height: 37.4251497005988vh;
+    }
+    .textoBanner {
+        height: 37.4251497005988vh;
+    }
+    .textoBanner h2 {
+        margin: 0px 5px 0px 5px;
+        line-height: 45pt;
+        font-size: 30pt;
+        font-weight: 500;
+    }
+    /* #region fale conosco*/
+    .faleConosco {
+        font-weight: 600;
+        line-height: 25px;
+        font-size: 15pt;
+    }
+    .faleConosco p {
+        padding: 0px 10px 0px 10px;
+        margin-bottom: 0px;
+    }
+    /* #endregion */
+}
+
+
+/* #endregion fim */
+
+
+/* #endregion fim */
+
+
+/* #endregion fim */
